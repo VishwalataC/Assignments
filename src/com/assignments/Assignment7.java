@@ -8,7 +8,7 @@ public class Assignment7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int i, totalTrans, creditCount = 0, debitCount = 0, suspTrnsttions, suspCount = 0;
+		int i, totalTrans, creditCount = 0, debitCount = 0, suspCount = 0;
 		float creditedAmount = 0.0f, debitedAmount = 0.0f;
 		Map<Integer, Integer> transaction = new TreeMap<Integer, Integer>();
 		transaction.put(1,50000);
@@ -21,7 +21,8 @@ public class Assignment7 {
 		transaction.put(8,-3000);
 		
 		
-		for(i = 1; i<=8; i++)
+//		for(i = 1; i<=8; i++)
+		for(i=1; i<transaction.size(); i++)
 		{
 			totalTrans = transaction.get(i);
 			if(totalTrans>0)
